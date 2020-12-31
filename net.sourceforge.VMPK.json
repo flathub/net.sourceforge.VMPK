@@ -4,7 +4,6 @@
   "runtime-version": "5.15",
   "sdk": "org.kde.Sdk",
   "command": "vmpk",
-  "rename-desktop-file": "vmpk.desktop",
   "rename-icon": "vmpk",
   "finish-args": [
     /* X11 + XShm access */
@@ -33,17 +32,24 @@
       "buildsystem": "cmake-ninja",
       "cleanup": [
         "/bin",
+        "/include",
+        "/lib/cmake",
+        "/lib/plugins",
+        "/lib/pkgconfig",
+        "/share/mime",
         "/share/icons/hicolor/*/apps",
-        "*.desktop"
-      ],
-      "config-opts": [
-        "-DLIB_SUFFIX="
+        "*.desktop",
+        "/lib/*.so"
       ],
       "sources": [
         {
           "type": "archive",
-          "url": "https://downloads.sourceforge.net/project/drumstick/1.1.3/drumstick-1.1.3.tar.bz2",
-          "sha256": "75aca4281da25fe0186b44c07772c5f0b4d1f2bba875c4667e7e6e9fcedb3cd9"
+          "url": "https://downloads.sourceforge.net/project/drumstick/2.0.0/drumstick-2.0.0.tar.bz2",
+          "sha256": "3d7405e3d34eade111eb4de09e509edfd1a610065a028f0ea424a63c07071221"
+        },
+        {
+          "type": "patch",
+          "path": "drumstick-build-fix.patch"
         }
       ]
     },
@@ -56,12 +62,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "http://downloads.sourceforge.net/project/vmpk/vmpk/0.7.2/vmpk-0.7.2.tar.bz2",
-          "sha256": "e682eb8d0003839f4cc696f408d2d0004e7be0839260b0cb24d690ffdab670c4"
-        },
-        {
-          "type": "file",
-          "path": "net.sourceforge.VMPK.appdata.xml"
+          "url": "http://downloads.sourceforge.net/project/vmpk/vmpk/0.8.0/vmpk-0.8.0.tar.bz2",
+          "sha256": "e390c156de29193c8bed5cad5509098eb9f29eae7f240c993e56eda5092bc472"
         }
       ]
     }
