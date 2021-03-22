@@ -44,8 +44,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://downloads.sourceforge.net/project/drumstick/2.0.0/drumstick-2.0.0.tar.bz2",
-          "sha256": "3d7405e3d34eade111eb4de09e509edfd1a610065a028f0ea424a63c07071221"
+          "url": "https://downloads.sourceforge.net/project/drumstick/2.1.0/drumstick-2.1.0.tar.bz2",
+          "sha256": "cbe86bfb26e4eaa376ddc838e819bc3e0cb561578f648a2b2c0d1dc8006e5d51"
         },
         {
           "type": "patch",
@@ -62,8 +62,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "http://downloads.sourceforge.net/project/vmpk/vmpk/0.8.0/vmpk-0.8.0.tar.bz2",
-          "sha256": "e390c156de29193c8bed5cad5509098eb9f29eae7f240c993e56eda5092bc472"
+          "url": "http://downloads.sourceforge.net/project/vmpk/vmpk/0.8.1/vmpk-0.8.1.tar.bz2",
+          "sha256": "166b424073e8ba01c1be7e237c4f46dfb2f6bf79add1c5bb5c4c14a84aa93d8d"
         }
       ]
     }
