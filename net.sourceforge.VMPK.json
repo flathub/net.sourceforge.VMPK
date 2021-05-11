@@ -32,7 +32,9 @@
       "name": "drumstick",
       "buildsystem": "cmake-ninja",
       "config-opts": [
-        "-DBUILD_DOCS=OFF"
+        "-DBUILD_DOCS=OFF",
+        "-DBUILD_UTILS=OFF",
+        "-DBUILD_TESTING=OFF"
       ],
       "cleanup": [
         "/bin",
@@ -48,22 +50,23 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://downloads.sourceforge.net/project/drumstick/2.1.1/drumstick-2.1.1.tar.bz2",
-          "sha256": "575e095d136406dd5b350e4f66247145b12ecb889784251955b4bc77ff249f1a"
+          "url": "https://downloads.sourceforge.net/project/drumstick/2.2.0/drumstick-2.2.0.tar.bz2",
+          "sha256": "62dbacfe480bd81b34bd140644ea093bd78eea56a33926902d58f0b05e18ca96"
         }
       ]
     },
     {
       "name": "vmpk",
       "buildsystem": "cmake-ninja",
+      "config-opts": [ "-DBUILD_DOCS=OFF" ],
       "post-install": [
         "install -Dm644 -t /app/share/metainfo/ net.sourceforge.VMPK.appdata.xml"
       ],
       "sources": [
         {
           "type": "archive",
-          "url": "http://downloads.sourceforge.net/project/vmpk/vmpk/0.8.2/vmpk-0.8.2.tar.bz2",
-          "sha256": "428d02f901cd7987616b67e005048211ca4da87ec4907c5624b3a911a42962cf"
+          "url": "http://downloads.sourceforge.net/project/vmpk/vmpk/0.8.3/vmpk-0.8.3.tar.bz2",
+          "sha256": "662985039863b2e54b1bafbc1ae7c22ca29a7686b93da2e736a7dde6e8966372"
         }
       ]
     }
