@@ -1,7 +1,7 @@
 {
   "app-id": "net.sourceforge.VMPK",
   "runtime": "org.kde.Platform",
-  "runtime-version": "5.15-21.08",
+  "runtime-version": "6.2",
   "sdk": "org.kde.Sdk",
   "command": "vmpk",
   "rename-icon": "vmpk",
