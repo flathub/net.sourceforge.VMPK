@@ -8,7 +8,8 @@
   "finish-args": [
     /* X11 + XShm access */
     "--share=ipc",
-    "--socket=x11",
+    "--socket=wayland",
+    "--socket=fallback-x11",
     /* Note playback */
     "--socket=pulseaudio",
     /* MIDI */
@@ -54,8 +55,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://downloads.sourceforge.net/project/drumstick/2.5.0/drumstick-2.5.0.tar.bz2",
-          "sha256": "8709d8a7c438c1d09091827ce5fd8286d387a046a8f717a1a34546d9ca3d902a"
+          "url": "https://downloads.sourceforge.net/project/drumstick/2.6.0/drumstick-2.6.0.tar.bz2",
+          "sha256": "f2bf804b97a63f001b28eedebc87897756e222ea1fa16f26ef244fe2695ce98a"
         }
       ]
     },
@@ -66,8 +67,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "http://downloads.sourceforge.net/project/vmpk/vmpk/0.8.6/vmpk-0.8.6.tar.bz2",
-          "sha256": "7307c9255794a24c99235886bea06f5e3701477e951a8773ad4c7902dbf73ce3"
+          "url": "http://downloads.sourceforge.net/project/vmpk/vmpk/0.8.7/vmpk-0.8.7.tar.bz2",
+          "sha256": "d32d574be2376e636b27ae4b4f42f24ddf1a48b5d59556451436708315432c69"
         }
       ]
     }
