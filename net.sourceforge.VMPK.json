@@ -1,7 +1,7 @@
 {
   "app-id": "net.sourceforge.VMPK",
   "runtime": "org.kde.Platform",
-  "runtime-version": "6.2",
+  "runtime-version": "6.3",
   "sdk": "org.kde.Sdk",
   "command": "vmpk",
   "rename-icon": "vmpk",
@@ -30,6 +30,28 @@
   "modules": [
     "shared-modules/linux-audio/fluidsynth2.json",
     {
+      "name": "sonivox",
+      "buildsystem": "cmake-ninja",
+      "config-opts": [
+        "-DBUILD_SONIVOX_STATIC=OFF",
+        "-DBUILD_SONIVOX_SHARED=ON",
+        "-DBUILD_TESTING=OFF"
+      ],
+      "cleanup": [
+        "/include",
+        "/lib/cmake",
+        "/lib/pkgconfig",
+        "/lib/*.so"
+      ],
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://github.com/pedrolcl/sonivox/archive/v3.6.11.tar.gz",
+          "sha256": "7d7f34508c5475dc6f1c13d1facea084c17a5bca73d085ee9842dae62329a473"
+        }
+      ]
+    },
+    {
       "name": "drumstick",
       "buildsystem": "cmake-ninja",
       "config-opts": [
@@ -55,8 +77,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://downloads.sourceforge.net/project/drumstick/2.6.0/drumstick-2.6.0.tar.bz2",
-          "sha256": "f2bf804b97a63f001b28eedebc87897756e222ea1fa16f26ef244fe2695ce98a"
+          "url": "https://downloads.sourceforge.net/project/drumstick/2.7.1/drumstick-2.7.1.tar.bz2",
+          "sha256": "e6270578340510840f9b490f64cd98d93b91d04e7215f46cf7efab25319b89c9"
         }
       ]
     },
@@ -67,8 +89,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "http://downloads.sourceforge.net/project/vmpk/vmpk/0.8.7/vmpk-0.8.7.tar.bz2",
-          "sha256": "d32d574be2376e636b27ae4b4f42f24ddf1a48b5d59556451436708315432c69"
+          "url": "http://downloads.sourceforge.net/project/vmpk/vmpk/0.8.8/vmpk-0.8.8.tar.bz2",
+          "sha256": "f8d8d372ccdbd4a5c6ca721c09fe08103bcde1ff29817b51d5392cc464796474"
         }
       ]
     }
