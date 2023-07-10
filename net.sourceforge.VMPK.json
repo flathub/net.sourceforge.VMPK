@@ -46,8 +46,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/pedrolcl/sonivox/archive/v3.6.11.tar.gz",
-          "sha256": "7d7f34508c5475dc6f1c13d1facea084c17a5bca73d085ee9842dae62329a473"
+          "url": "https://github.com/pedrolcl/sonivox/archive/v3.6.12.tar.gz",
+          "sha256": "23a7f29c617e791dfcb50b75eef41464e4bf3fca15b19da395a64373ff5d8456"
         }
       ]
     },
@@ -77,8 +77,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://downloads.sourceforge.net/project/drumstick/2.7.1/drumstick-2.7.1.tar.bz2",
-          "sha256": "e6270578340510840f9b490f64cd98d93b91d04e7215f46cf7efab25319b89c9"
+          "url": "https://downloads.sourceforge.net/project/drumstick/2.8.0/drumstick-2.8.0.tar.gz",
+          "sha256": "8b385f629a39af559974e3cc1d6b5ec5cc9bfff2f210b57d2b6fe70a5cb0aed2"
         }
       ]
     },
