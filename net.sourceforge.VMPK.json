@@ -89,8 +89,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "http://downloads.sourceforge.net/project/vmpk/vmpk/0.8.8/vmpk-0.8.8.tar.bz2",
-          "sha256": "f8d8d372ccdbd4a5c6ca721c09fe08103bcde1ff29817b51d5392cc464796474"
+          "url": "http://downloads.sourceforge.net/project/vmpk/vmpk/0.8.9/vmpk-0.8.9.tar.bz2",
+          "sha256": "5c5452b4fa0f66d18d796c0d8f6acdfdbb02d4f00b219d451e013c5e6e7b232c"
         }
       ]
     }
