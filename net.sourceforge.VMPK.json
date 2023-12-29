@@ -1,7 +1,7 @@
 {
   "app-id": "net.sourceforge.VMPK",
   "runtime": "org.kde.Platform",
-  "runtime-version": "6.5",
+  "runtime-version": "6.6",
   "sdk": "org.kde.Sdk",
   "command": "vmpk",
   "rename-icon": "vmpk",
@@ -77,8 +77,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://downloads.sourceforge.net/project/drumstick/2.8.1/drumstick-2.8.1.tar.gz",
-          "sha256": "a7d43f5ac073f9c6e5fb7a3b4323f830b89f440f2c90d47d6f8abe67800c700c"
+          "url": "https://downloads.sourceforge.net/project/drumstick/2.9.0/drumstick-2.9.0.tar.gz",
+          "sha256": "b2692d3f96a1537ecf3a81dcad5c88ff700fc0af400dc2570cce19cb6cd1023a"
         }
       ]
     },
@@ -89,8 +89,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "http://downloads.sourceforge.net/project/vmpk/vmpk/0.8.10/vmpk-0.8.10.tar.bz2",
-          "sha256": "111ca059571b5df950d583f1d3b63e148125344091967721ba804958561e6625"
+          "url": "http://downloads.sourceforge.net/project/vmpk/vmpk/0.9.0/vmpk-0.9.0.tar.bz2",
+          "sha256": "c47ee14cbf1903075440acad729d8e0e02e4c98606183756676eeac1a1aebcd9"
         }
       ]
     }
