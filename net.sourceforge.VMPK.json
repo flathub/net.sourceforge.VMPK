@@ -44,8 +44,8 @@
       "sources": [
           {
               "type": "archive",
-              "url": "https://github.com/FluidSynth/fluidsynth/archive/v2.4.0.tar.gz",
-              "sha256": "fd4d216a3030abc56a339985ab0506328660cd77b2d71dd98c240c58c03d8f7f"
+              "url": "https://github.com/FluidSynth/fluidsynth/archive/v2.4.1.tar.gz",
+              "sha256": "d1e64155ac902116ed3d4dea512719d8c04ab3877db2e8fb160284379f570a2f"
           }
       ]
     },
@@ -66,8 +66,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/pedrolcl/sonivox/archive/v3.6.14.tar.gz",
-          "sha256": "216171c5bbe4f5a9524d73a2ee9e7e597c71a040e5d7c9e35b92c9dc459c2985"
+          "url": "https://github.com/pedrolcl/sonivox/archive/v3.6.15.tar.gz",
+          "sha256": "3e54cf11ecdc7ffd9fb24f0ba3319b6e0fe3df56f5e3082f2847666a31be3ff3"
         }
       ]
     },
@@ -97,8 +97,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://downloads.sourceforge.net/project/drumstick/2.9.1/drumstick-2.9.1.tar.gz",
-          "sha256": "a7049333d5411faf4d91a81ae666746106b578897fc0713a84325f65fdd06ffb"
+          "url": "https://downloads.sourceforge.net/project/drumstick/2.10.0/drumstick-2.10.0.tar.gz",
+          "sha256": "92f5fc2a94b8c9067200897fd14027f707bf0103871ea942e388f9afe95e0f34"
         }
       ]
     },
@@ -109,8 +109,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "http://downloads.sourceforge.net/project/vmpk/vmpk/0.9.0/vmpk-0.9.0.tar.bz2",
-          "sha256": "c47ee14cbf1903075440acad729d8e0e02e4c98606183756676eeac1a1aebcd9"
+          "url": "http://downloads.sourceforge.net/project/vmpk/vmpk/0.9.1/vmpk-0.9.1.tar.bz2",
+          "sha256": "3bfb888355aae87c2dec9e409285d0b21061acaad075f5536dbf2aafbb6d48dc"
         }
       ]
     }
