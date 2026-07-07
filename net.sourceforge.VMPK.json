@@ -6,70 +6,27 @@
   "command": "vmpk",
   "rename-icon": "vmpk",
   "finish-args": [
-    /* X11 + XShm access */
     "--share=ipc",
     "--socket=wayland",
     "--socket=fallback-x11",
-    /* PulseAudio */
     "--socket=pulseaudio",
-    /* Pipewire */
-    "--filesystem=xdg-run/pipewire-0",
+    "--filesystem=xdg-run/pipewire-0:ro",
     "--device=dri",
-    /* Allow loading, saving files from anywhere (portals don’t work yet) */
     "--filesystem=home",
-    /* Allow other instances to see lockfiles */
     "--env=TMPDIR=/var/tmp",
-    /* On SuSE it seems to be necessary for sound to work */
     "--env=ALSA_CONFIG_PATH="
   ],
   "cleanup": [
+    "/include",
+    "/lib/cmake",
+    "/lib/pkgconfig",
     "/share/man",
     "/share/doc",
     "/share/gtk-doc",
     "*.la"
   ],
   "modules": [
-    {
-      "name": "gcem",
-      "buildsystem": "cmake-ninja",
-      "config-opts": [
-        "-DCMAKE_POLICY_VERSION_MINIMUM=3.5"
-      ],
-      "cleanup": [
-          "/include",
-          "/lib/cmake",
-          "/lib/pkgconfig"
-      ],
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://github.com/kthohr/gcem/archive/v1.18.0.tar.gz",
-          "sha256": "8e71a9f5b62956da6c409dda44b483f98c4a98ae72184f3aa4659ae5b3462e61"
-        }
-      ]
-    },
-    {
-      "name": "fluidsynth",
-      "buildsystem": "cmake-ninja",
-      "config-opts": [
-        "-Dosal=cpp11"
-      ],
-      "cleanup": [
-          "/bin",
-          "/include",
-          "/lib/cmake",
-          "/lib/pkgconfig",
-          "/share/man",
-          "*.so"
-      ],
-      "sources": [
-          {
-              "type": "archive",
-              "url": "https://github.com/FluidSynth/fluidsynth/archive/v2.5.2.tar.gz",
-              "sha256": "1dcb13308b3aa383db658c60a7b63d73d0ff4601ccee589582ba7a816475410e"
-          }
-      ]
-    },
+    "shared-modules/linux-audio/fluidsynth2.json",
     {
       "name": "sonivox",
       "buildsystem": "cmake-ninja",
@@ -77,12 +34,6 @@
         "-DBUILD_APPLICATION=OFF",
         "-DBUILD_TESTING=OFF",
         "-DBUILD_MANPAGE=OFF"
-      ],
-      "cleanup": [
-        "/include",
-        "/lib/cmake",
-        "/lib/pkgconfig",
-        "/lib/*.so"
       ],
       "sources": [
         {
@@ -106,10 +57,6 @@
       ],
       "cleanup": [
         "/bin",
-        "/include",
-        "/lib/cmake",
-        "/lib/plugins",
-        "/lib/pkgconfig",
         "/share/mime",
         "/share/icons/hicolor/*/apps",
         "*.desktop",
@@ -126,11 +73,13 @@
     {
       "name": "vmpk",
       "buildsystem": "cmake-ninja",
-      "config-opts": [ "-DBUILD_DOCS=OFF" ],
+      "config-opts": [
+        "-DBUILD_DOCS=OFF"
+      ],
       "sources": [
         {
           "type": "archive",
-          "url": "http://downloads.sourceforge.net/project/vmpk/vmpk/0.9.2/vmpk-0.9.2.tar.bz2",
+          "url": "https://downloads.sourceforge.net/project/vmpk/vmpk/0.9.2/vmpk-0.9.2.tar.bz2",
           "sha256": "154548e88a1ee339906bce29a86970fe6cb6470f1fa4c7198bd6d9bbf8332060"
         }
       ]
